@@ -1,0 +1,39 @@
+{
+  "name": "DayMate",
+  "version": "1.0.0",
+  "description": "AI-powered Telegram agent for morning news briefings and instant bill splitting",
+  "author": "Harshavardhan",
+  "entry": "bot.py",
+  "runtime": "python",
+  "triggers": [
+    {
+      "type": "schedule",
+      "name": "morning_briefing",
+      "cron": "0 8 * * *",
+      "description": "Send personalised news briefing to all users every morning at 8am"
+    },
+    {
+      "type": "message",
+      "name": "telegram_listener",
+      "channel": "telegram",
+      "description": "Listen for user messages and photo uploads on Telegram"
+    }
+  ],
+  "skills": [
+    "telegram",
+    "web_search",
+    "image_recognition",
+    "scheduler"
+  ],
+  "capabilities": [
+    "Fetch and summarise personalised news using NewsAPI + Groq AI",
+    "Read restaurant bill photos using vision AI",
+    "Split bills fairly between any number of people",
+    "Schedule and deliver automated morning briefings"
+  ],
+  "env_required": [
+    "TELEGRAM_TOKEN",
+    "NEWS_API_KEY",
+    "GROQ_API_KEY"
+  ]
+}
