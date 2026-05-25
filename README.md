@@ -90,13 +90,20 @@ python bot.py
 
 ## 📁 Project Structure
 daymate/
-├── bot.py              # Main OpenClaw agent entry point
-├── news.py             # News fetching and AI summarisation
-├── bills.py            # Bill photo reading and splitting
-├── openclaw.json       # OpenClaw agent configuration
-├── requirements.txt    # Python dependencies
-├── .env                # API keys (not committed)
-└── README.md           # This file
+
+bot.py              # Main OpenClaw agent entry point
+
+news.py             # News fetching and AI summarisation
+
+bills.py            # Bill photo reading and splitting
+
+openclaw.json       # OpenClaw agent configuration
+
+requirements.txt    # Python dependencies
+
+.env                # API keys (not committed)
+
+README.md           # This file
 ---
 
 ## 💡 Why OpenClaw?
