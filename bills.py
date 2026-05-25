@@ -19,7 +19,7 @@ def read_bill(image_path: str) -> str:
         base64_image = encode_image(image_path)
         
         response = client.chat.completions.create(
-            model="llama-3.2-11b-vision-preview",
+            model="meta-llama/llama-4-scout-17b-16e-instruct",
             messages=[
                 {
                     "role": "user",
@@ -91,7 +91,7 @@ Each person owes: *£X.XX*
 Keep it clear and friendly!"""
 
         response = client.chat.completions.create(
-            model="llama3-8b-8192",
+            model="llama-3.3-70b-versatile",
             messages=[{"role": "user", "content": prompt}],
             max_tokens=500
         )
